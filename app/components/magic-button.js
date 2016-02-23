@@ -1,0 +1,1 @@
+export { default } from 'magic-button/components/magic-button';

@@ -2,5 +2,8 @@
 'use strict';
 
 module.exports = {
-  name: 'magic-button'
+  name: 'magic-button',
+  isDevelopingAddon: function() {
+    return true;
+  }
 };
