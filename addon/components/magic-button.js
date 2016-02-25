@@ -7,7 +7,7 @@ export default Ember.Component.extend({
   magicIsHappening: false,
   delay: 1000,
   click() {
-    this.toggleProperty('magicIsHappening');
-    Ember.run.later(() => this.toggleProperty('magicIsHappening'), this.get('delay'));
+    this.set('magicIsHappening', true);
+    Ember.run.later(() => this.set('magicIsHappening', false), this.get('delay'));
   }
 });
